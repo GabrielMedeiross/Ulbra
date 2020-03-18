@@ -1,0 +1,117 @@
+body {
+	margin:20;
+}
+
+#principal {
+	width: 50%;
+	margin:0px auto;
+	font-family: arial;
+	padding: 10px 30px 30px 30px;
+	border: 1px solid;
+}
+
+.linha {
+	clear: both;
+}
+
+#epigrafe {
+	text-align: center;
+	background-color: rgb(128, 184, 201);
+	border-radius: 10px;
+}
+
+#retrato {
+	width: 30%;
+	float: left;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#imagem {
+	max-width: 130px;
+	max-height: 130px;
+    border-radius: 50%;
+}
+
+#comunicacao {
+	float: left;
+	width: 70%;
+	vertical-align: middle;
+}
+
+.dados {
+	color: rgb(128, 184, 201);
+}
+
+
+h2{
+	color: rgb(0, 0, 0);
+	font-size: 20px;
+}
+
+hr{
+	border-color: rgb(128, 184, 201);
+	margin-top: 1px;
+
+}
+
+p{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+
+.titulo1 {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.titulo2 {
+	font-size: 18px;
+}
+
+
+.circle {
+	width: 10px;
+	height: 10px;
+	background-color: rgb(128, 184, 201);
+	border-radius: 50px;
+	float: right;
+	margin-right: 7px;
+}
+
+#esquerda {
+	float: left;
+	width: 48%;
+	margin-top: 0px;
+}
+
+#direita {
+	float: left;
+	width: 48%;
+	margin-top: 0px;
+}
+
+#centro {
+
+	float: left;
+	width: 2px;
+	height: 310px;
+	background-color: rgb(128, 184, 201);
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 30%;
+	margin-top: 20px;
+}
+
+.hrcentro {
+	border-color: rgb(128, 184, 201);
+	float: right;
+	width: 82%;
+	margin-top: 10px;
+}
+
+.titutodados {
+	margin-bottom: 0px;
+}
