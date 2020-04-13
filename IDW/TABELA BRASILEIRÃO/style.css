@@ -1,0 +1,291 @@
+#cab td{
+	color:  rgb(105, 104, 104);
+	font-size: 80%;
+	border-top: 1px solid  rgb(182, 181, 181);
+	font-family: sans-serif;
+	letter-spacing: -0.3px;
+}
+
+span{
+	font-weight: normal;
+	font-size: 11px;
+	color: rgb(105, 104, 104);
+}
+
+.equipe{
+	text-align: left;
+	font-size: 16px;
+	font-family: sans-serif;
+	letter-spacing: -0px;
+}
+
+body{
+	margin: 0 auto;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+td{
+	padding-bottom: 1.5%;
+	padding-top: 1.5%;
+	color: rgb(12, 12, 12);
+	text-align: center;
+	border-bottom: 1px solid rgb(190, 190, 190);
+	width: 6%;
+}
+
+caption{
+	font-weight: bold;
+	text-align: left;
+	font-family: ProximaNova,"Helvetica Neue",Arial,sans-serif;
+	font-size: 26px;
+	letter-spacing: -1.04px;
+}
+
+table{
+	padding-top: 1.4%;
+	border-spacing:0;
+}
+
+.td-legenda{
+	width: 0%;
+	border: none;
+}
+
+#topo{
+	background-color: #377a0d;
+	padding-bottom: 2%;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 6%;
+	font-size: 8px;
+	font: inherit;
+	font-weight: 50px;
+	color: rgb(255, 255, 255);
+	font-family: proximanova-light,Arial,sans-serif;
+}
+
+.detalhes{
+	font-size: 11px;
+	font-weight: bold;
+	color: #666;
+	border-bottom: none;
+	padding-top: 5%;
+}
+
+#corpo{
+	padding-top: 9%;
+	padding-right: 6%;
+	padding-left: 5%;
+}
+
+#clas{
+	width: 30%;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.pos{
+	width: 2%;
+}
+
+#pont{
+	width: 65%;
+	float: left;
+}
+
+#jogos{
+	float: right;
+	width: 30%;
+}
+
+.placar{
+	padding-bottom: 9.339%;
+}
+
+#rodada{
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	border-top: 1px solid #999; 
+	border-bottom: 1px solid #A9A9A9;
+	padding-bottom: 2.3%;
+    padding-top: 2.3%;
+}
+
+.gols-placar{
+	font-size: 200%;
+	font-weight: bold;
+	padding-bottom: 9.339%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pontos{
+	background-color: #f1eeee;
+	padding: 18.85px;
+}
+
+.vitorias{
+	background-color: #f1eeee;
+}
+
+.derrotas{
+	background-color: #f1eeee;
+}
+
+.gc{
+	background-color: #f1eeee;
+}
+
+.porc{
+	background-color: #f1eeee;
+}
+
+.centro{
+	width: 14%;
+	padding-right: 5%;
+}
+
+.greencircle{
+    border-radius: 50%;
+    width:6px;
+    height:6px;
+    background-color: #006809;
+    float: right;
+    margin-left: 3px;
+}
+
+.redcircle{
+    border-radius: 50%;
+    width:6px;
+    height:6px;
+    background-color: #ff0000;
+    float: right;
+    margin-left: 3px;
+}
+
+.pospl{
+	color:  #006809;
+}
+
+.pospl2{
+	color:  #ff0000;
+}
+
+.gols{
+	font-weight: bold;
+	font-size: 10px;
+}
+
+#caption-artilheiros{
+	padding-top: 5%;
+	padding-bottom: 2.5%;
+	border: none;
+	font-size: 22px;
+}
+
+#artilheiros{
+	padding-top: 0%;
+	border: none;
+	border-top: 1px solid #d4d4d4;
+    width: 100%;
+}
+
+.gols{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.texto-legenda{
+	font-size: 0.8em;
+	color: silver;
+	padding-right: 17%;
+	border-bottom: none;
+
+}
+
+.clas-art{
+	color: #006809;
+	text-align: left;
+	width: 0.1%;
+}
+
+.foto-art{
+	padding-left: 1px;
+	width: 0.1%;	
+}
+
+.foto-artilheiro{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.td-time-art{
+	padding-left: 1px;
+	width: 0.1%;
+}
+
+.time-artilheiro{
+	width: 30px;
+	height: 30px;
+}
+
+.name-art{
+	font-weight: bold;
+	font-size: 20px;
+	padding-left: 3px;
+	width: 0.1%;
+	padding-right: 80%;
+
+}
+
+.posicao-art{
+	padding-left: 3PX;
+}
+
+.qtd-gol-art{
+	font-size: 90%;
+	text-align:right;
+	color:rgb(78, 78, 78); 
+	
+}
+
+
+#cabjog{
+	font-size: 70%;
+	text-align: left;
+	color:rgb(78, 78, 78); 
+	padding-bottom: 1%;
+	padding-top: 1%;
+}
+
+#cabgol{
+	font-size: 70%;
+	text-align: right;
+	color: rgb(78, 78, 78); 
+}
+
+#colu2{
+	float: left;
+	background-color: #999;
+	width: 1px;
+	height: 1166px;
+	margin-left: 1.0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
