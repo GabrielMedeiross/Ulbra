@@ -1,0 +1,16 @@
+body{
+    background-image: url(https://baixarpapeldeparede.com/web/wallpapers/wallpaper-hd-batman-49/thumbnail/lg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+
+}
+
+.jumbotron img {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
