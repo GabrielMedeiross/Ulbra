@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  
+<body>
+  <fieldset>
+  <div>
+    
+    <!-- title -->
+    <h3 id='title'>Calculadora </h3>
+    
+    <!-- body -->
+      <form name="calc">
+        <input type="text" class="result" name="input"><br />
+        
+        <input type="button" value="1" onclick="cv(this.value)">
+        <input type="button" value="2" onclick="cv(this.value)">
+        <input type="button" value="3" onclick="cv(this.value)">
+        <input type="button" value="+" onclick="cv(this.value)"><br />
+                       
+        <input type="button" value="4" onclick="cv(this.value)">
+        <input type="button" value="5" onclick="cv(this.value)">
+        <input type="button" value="6" onclick="cv(this.value)">
+        <input type="button" value="-" onclick="cv(this.value)"><br />
+                        
+        <input type="button" value="7" onclick="cv(this.value)">
+        <input type="button" value="8" onclick="cv(this.value)">
+        <input type="button" value="9" onclick="cv(this.value)">
+        <input type="button" value="*" onclick="cv(this.value)"><br />
+                        
+        <input type="button" value="c" onclick="cv(this.value)">
+        <input type="button" value="0" onclick="cv(this.value)">
+        <input type="button" value="=" onclick="resultado()">
+        <input type="button" value="/" onclick="cv(this.value)">
+      </form>
+      <!-- end body -->
+  </div>
+  </fieldset>
+</body>
+</html>
