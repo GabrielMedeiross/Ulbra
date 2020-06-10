@@ -1,0 +1,35 @@
+form{
+    text-align: center;
+}
+
+input{
+    width:80%;
+    height:50px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*details calc*/
+input.result{
+    width:210px;
+    display:block;
+}
+
+/*details body*/
+fieldset{
+    width: 300px;
+    height: 335px;
+    background-color: rgb(206, 202, 202);
+    border-style: unset;
+    margin: 10px auto 5px auto;
+    border-radius: 15px;
+}
+
+/*details title*/
+h3{
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+}
+
+
