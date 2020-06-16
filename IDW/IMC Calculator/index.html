@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora IMC</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  
+<body>
+  <fieldset>
+  <div>
+    
+    <!-- title -->
+    <h3 id='title'>Calculadora IMC</h3>
+    
+    <!-- body -->
+      <form name="calc">
+        <h3 id="result" class="result"></h3><br />
+        <label>Sexo</label>
+        <select id="sexo">
+          <option value="f">Feminino</option>
+          <option value="m">Masculino</option>
+        </select>
+        <input type="number" id="peso" placeholder="Digite seu peso"><br />
+        <input type="number" id="altura" placeholder="Digite sua altura"><br />
+        <input type="button" value="Calcular" onclick="cv()">
+      </form>
+      <!-- end body -->
+  </div>
+  </fieldset>
+</body>
+</html>
