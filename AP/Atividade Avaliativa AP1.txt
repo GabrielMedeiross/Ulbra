@@ -1,0 +1,88 @@
+1 - Resposta.
+
+var 
+inteiro: mês
+início: 
+
+escreva(" informe o Mês do ano: 1-janeiro,2-fevereiro,3-março,4-abril,5-maio,6-junho,7-julho,8-agosto,9-setembro,10-outubro,11-novembro,12-dezembro "); 
+ler:(mes) 
+escolha(mes) 
+caso 1 2 3 
+escreva("Verão") 
+caso 4 5 6 
+escreva ("Outono") 
+caso 7 8 9 
+escreva("Inverno”) 
+caso 10 11 12 
+escreva(“Primavera”) 
+  fimescolha 
+fimalgoritmo
+
+
+2-  Resposta.
+
+var 
+altura,peso:real 
+início: 
+
+escreva(“Peso do Jogador”) 
+ler(peso) 
+escreva(“Altura do Jogador”) 
+ler(altura) 
+
+se altura>=1.75 e altura<=1.90 entao 
+    se peso>=70 ou peso<=80 entao 
+escreva(“Aceito”) 
+senao 
+escreva(“Recusado por Peso”) 
+fimse 
+senao 
+se peso>=70 ou peso<=80 entao 
+     escreva (Recusado por altura) 
+senao 
+     escreva (totalmente recusado) 
+   fimse 
+fimse 
+fimalgoritmo
+
+
+3 – Resposta
+
+var 
+tipo:inteiro 
+valor,pfinal,desconto:real 
+
+início: 
+
+escreva(“Tipo de produto 1-ouro,2-prata,3-bronze,4-papel”) 
+ler(tipo) 
+escreva(Valor do produto) 
+ler(valor) 
+escolha(tipo)
+ 
+caso 1 
+pfinal=valor - (valor * 30)/100 
+desconto=pfinal -valor 
+escreva(“valor final a pagar com desconto”, pfinal) 
+escreva(“valor de desconto”, desconto) 
+
+caso 2 
+     pfinal=valor - (valor * 25)/100 
+desconto=pfinal -valor 
+escreva(“valor final a pagar com desconto”, pfinal) 
+escreva(“valor de desconto”, desconto) 
+
+caso 3 
+     pfinal=valor - (valor * 20)/100 
+desconto=pfinal -valor 
+escreva(“valor final a pagar com desconto”, pfinal) 
+escreva(“valor de desconto”, desconto) 
+
+caso 4 
+     pfinal=valor - (valor * 15)/100 
+desconto=pfinal -valor 
+escreva(“valor final a pagar com desconto”, pfinal) 
+escreva(“valor de desconto”, desconto) 
+
+fimescolha 
+fimalgoritmo
