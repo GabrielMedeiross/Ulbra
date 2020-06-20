@@ -1,0 +1,68 @@
+1 - Resposta.
+
+int main()
+{
+int codigo_cli, tipo_aten, cont1=0, cont2=0, cont3=0, cli ;
+float dinheiro;
+char resposta;
+do {
+printf("\n Informe o cliente:");
+scanf("%i", &codigo_cli);
+printf("Qual serviço gostaria 1-Limpeza de pele 2-hidrataçao de capilar 3-
+Massagem teraupeutica");
+scanf("%i", &tipo_aten);
+if(tipo_aten==1){
+cont1=cont1 +1;
+}
+if(tipo_aten==2){
+
+cont2=cont3 +1;
+}
+if(tipo_aten==3){
+cont3=cont3 +1;
+}
+
+printf("Cadastrar outro cliente");
+getchar();
+scanf("%c", &resposta);
+}while (resposta == 's');
+dinheiro=(cont1*10)+(cont2*80)+(cont3*150);
+cli=cont1+cont2+cont3;
+printf("foi atendido %i cleintes hoje, gerando um lucro de R$ %.2f",
+cli,dinheiro);
+
+return 0;
+}
+
+
+2 - Resposta.
+
+#include <stdio.h>
+#include <stdbool.h>
+ 
+int main()
+{
+    float weight = 0, max = 0, min = 0;
+ 
+    do {
+        printf("Informe seu peso para entrar no brinquedo: ");
+        scanf("%f", &weight);
+    
+        if(min == 0) min = weight;
+    
+        if(max < weight) max = weight;
+        if(min > weight && weight != 0) min = weight;
+    
+        if (weight > 80.00) {
+            printf(
+                "\nPeso acima do limite permitido, "
+                "você não pode ingressar neste brinquedo!\n\n"
+            );
+        }
+    }while (weight != 0);
+    printf(
+        "\n=> Maior peso foi de = %.2f\n"
+        "=> Menor peso foi de = %.2f", max, min
+    );
+}
+
