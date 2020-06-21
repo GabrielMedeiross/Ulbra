@@ -1,0 +1,184 @@
+1-
+CREATE TABLE cidade 
+(
+  id INT NOT NULL AUTO_INCREMENT, 
+	nome VARCHAR(50) NOT NULL, 
+	uf VARCHAR(2),
+	CONSTRAINT pk_cidade 
+	PRIMARY KEY (id)
+);
+
+CREATE TABLE medico 
+(
+  id INT NOT NULL AUTO_INCREMENT, 
+	nome VARCHAR(50) NOT NULL,
+	endereco VARCHAR(80), 
+	telefone VARCHAR(12), 
+	id_cidade INT NOT NULL,
+	  CONSTRAINT primary_key_medico 
+		PRIMARY KEY (id),
+	  CONSTRAINT foreign_key_medico 
+		FOREIGN KEY (id_cidade)
+			REFERENCES cidade (id)
+);
+
+CREATE TABLE paciente 
+(
+  id INT NOT NULL AUTO_INCREMENT, 
+	nome VARCHAR(50) NOT NULL,
+	endereco VARCHAR(80), 
+	telefone VARCHAR(12), 
+	id_cidade INT NOT NULL,
+	  CONSTRAINT primary_key_paciente 
+		PRIMARY KEY (id),
+	  CONSTRAINT foreign_key_paciente 
+		FOREIGN KEY (id_cidade)
+			REFERENCES cidade (id)
+);
+
+CREATE TABLE consulta 
+(
+  id INT NOT NULL AUTO_INCREMENT,
+	id_medico INT NOT NULL, 
+	id_paciente INT NOT NULL, 
+	data DATE,
+	hora TIME(6),
+	  CONSTRAINT primary_key_consulta 
+		PRIMARY KEY (id),
+ 
+	  CONSTRAINT foreign_key_consulta 
+		FOREIGN KEY (id_medico)
+			REFERENCES medico (id), 
+		FOREIGN KEY (id_paciente)
+			REFERENCES paciente (id)
+);
+
+CREATE TABLE medicamento 
+(
+  id INT NOT NULL AUTO_INCREMENT, 
+	nome VARCHAR(50) NOT NULL,
+	composicao VARCHAR(50) NOT NULL, 
+	preco VARCHAR(5) NOT NULL
+);
+
+CREATE TABLE prescricao 
+(
+  id INT NOT NULL AUTO_INCREMENT,
+  id_consulta INT NOT NULL, 
+	id_medicamento INT NOT NULL, 
+	posologia VARCHAR(50) NOT NULL, 
+	  CONSTRAINT primary_key_prescricao
+		PRIMARY KEY (id, id_consulta, id_medicamento), 
+	  CONSTRAINT foreign_key_prescricao
+		FOREIGN KEY (id_consulta) 
+			REFERENCES consulta (id),
+		FOREIGN KEY (id_medicamento) 
+			REFERENCES medicamento (id)
+); 
+
+2-
+INSERT INTO cidade (nome,uf) VALUES ('Torres', 'RS');
+INSERT INTO cidade (nome,uf) VALUES ('Três Cachoeiras', 'RS'); 
+INSERT INTO cidade (nome,uf) VALUES ('São João do Sul', 'SC');
+
+INSERT INTO medico (nome,endereco,telefone,id_cidade) 
+VALUES ('Med 1', 'Rua Joaquim Porto‘, '51999999999', 1);
+
+INSERT INTO medico (nome,endereco,telefone,id_cidade) 
+VALUES ('Med 2', 'Av.Benjamin Constant', '51988888888','2');
+
+INSERT INTO medico (nome,endereco,telefone,id_cidade) 
+VALUES ('Med 3', 'Rua Universitária', '51987777777','3');
+
+INSERT INTO paciente (nome,endereco,telefone,id_cidade) 
+VALUES ('Pedro','Rua 2', '519984212', 2);
+INSERT INTO paciente (nome,endereco,telefone,id_cidade)
+ 
+VALUES ('Joana','Rua 3', '5199821212', 3);
+INSERT INTO paciente (nome,endereco,telefone,id_cidade) 
+VALUES ('Osvaldo','Rua 4', '5193224212', 1);
+
+INSERT INTO consulta (id_medico,id_paciente,data,hora) 
+VALUES ('1', '2', '2019-05-30', '18:30');
+INSERT INTO consulta (id_medico,id_paciente,data,hora) 
+VALUES ('3', '1', '2019-06-30', '18:30');
+INSERT INTO consulta (id_medico,id_paciente,data,hora) 
+VALUES ('2', '3', '2019-06-24', '18:30');
+
+
+INSERT INTO medicamento (nome,composicao,preco) 
+VALUES ('dipirona','b', '6,00');
+INSERT INTO medicamento (nome,composicao,preco) 
+VALUES ('doril','c','10,00');
+
+INSERT INTO prescricao (id_consulta,id_medicamento,posologia) 
+VALUES (3,1,'Tomar medicamento uma vez ao dia');
+INSERT INTO prescricao (id_consulta,id_medicamento,posologia) 
+VALUES (2,2,'Tomar medicamento 4 vezes ao dia');
+INSERT INTO prescricao (id_consulta,id_medicamento,posologia) 
+VALUES (1,3,'Tomar medicamento duas vezes ao dia');
+
+3-
+UPDATE medicamento
+SET preco = preco + (preco * (20/100)) 
+WHERE id = 1;
+
+4-
+DELETE FROM cidade 
+WHERE id = 3;
+
+5-
+SELECT * FROM cidade 
+WHERE uf = 'RS';
+
+6-
+SELECT nome, preco 
+FROM medicamento;
+
+7-
+SELECT nome, telefone 
+FROM medico
+WHERE id_cidade = '1';
+ 
+8-
+SELECT medicamento.nome, prescricao.posologia 
+FROM medicamento, prescricao
+WHERE id_consulta = 1 AND medicamento.id = prescricao.id_medicamento; 
+
+9-
+SELECT paciente.nome, paciente.telefone 
+FROM paciente, cidade
+WHERE paciente.id_cidade = cidade.id 
+AND cidade.nome = 'Capão da Canoa’;
+
+10-
+
+SELECT nome
+FROM paciente, consulta
+WHERE consulta.id_paciente = paciente.id; 
+
+11-
+SELECT paciente.nome, paciente.telefone 
+FROM paciente, consulta
+WHERE data = '2015.05.07' AND consulta.id_paciente = paciente.id; 
+
+12 -
+select AVG(preco) from medicamentos 
+
+13 -
+select count(*) from consultas
+
+14 -
+
+select name, MAX(preco) from medicamentos 
+
+15 -
+select nome from medicamentos where preco > AVG(preco)
+
+
+16 -
+SELECT paciente.nome, medico.nome, consulta.data, 
+consulta.hora
+FROM paciente, medico, consulta
+WHERE paciente.id = consulta.id_paciente and medico.id = 
+consulta.id_medico
