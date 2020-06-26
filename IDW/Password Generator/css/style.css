@@ -1,0 +1,50 @@
+/* Body */
+body{
+  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #fa9b48 100%);
+  background-attachment: fixed;
+}
+
+/* Color Title */
+h1{
+  color: white;
+}
+
+/* Color letters */
+label , imput , div{
+  color: white;
+}
+
+html{
+  text-align: center;
+}
+
+/* Button */
+button{
+  font-size: 1em;
+  margin: 0.5em;
+  padding: 5px 20px 5px 20px;
+}
+
+/* Container */
+#container{
+  width: 300px;
+  height: auto;
+  background-image: linear-gradient(147deg, #8c1f96 0%, #4c1d8a 74%);
+  border-style: unset;
+  margin: 10px auto 10px auto;
+  border-radius: 15px;
+  margin-top: 70px;
+  opacity: 80%;
+}
+
+/* Chrome, Safari, Edge, Opera, Chrome */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* code area */
+textarea{
+  width: 180px;
+}

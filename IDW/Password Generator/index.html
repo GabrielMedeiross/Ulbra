@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>Gerador de senhas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS -->
+    <script type="text/javascript" src="./js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<!-- body -->
+<body>
+    <section>
+    <div id="container" class= "py-4 text-center">
+        <!-- title -->
+        <h1>Gerador de Senhas</h1>
+        
+        <label for="quantidadeSenha">Quantidade de senhas</label><br>
+        <input id="quantidadeSenha" type="number" class="w-25 mb-2 text-center" min="1" max="200" placeholder="Max 200"><br>
+        <label for="tamanhoSenha">Tamanho da senha</label><br>
+        <input id="tamanhoSenha" type="number" class="w-25 mb-2 text-center" min="1" max="12" placeholder="Max 12"><br>        
+        <input id="temNumeros" type="checkbox" class="mb-2" value="numeros">Números.<br>
+        <input id="temEspeciais" type="checkbox" class="mb-2" value="caracteres">Caracteres Especiais.<br>
+        <button class="mb-3" onclick="constroiSenha()">Gerar</button><br/>
+        <textarea name="senha" class="text-center" id="resultado" rows="4" ></textarea>
+    </div>
+    </section>
+</body>
+<!-- end body -->
+</html>
