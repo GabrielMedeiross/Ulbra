@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    
+    color: white;
+}
+
+header{
+    color: brown;
+}
+
+.list-unstyled, h2{
+    margin-left: 15px;
+}
+
+p {
+    font-size: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    
+}
